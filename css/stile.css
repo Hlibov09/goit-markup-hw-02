@@ -1,11 +1,14 @@
 :root {
+  --first-color: #212121;
   --second-color: #757575;
   --third-color: #ffffff;
   --accent-color: #2196f3;
+  --footer-mail-tel-color: rgba(255, 255, 255, 0.6);
+  --background-color: #2f303a;
 }
 body {
   font-family: 'Roboto', sans-serif;
-  color: #212121;
+  color: var(--first-color);
 }
 .list {
   list-style: none;
@@ -17,20 +20,26 @@ body {
 /* HEDER*/
 
 .heder-logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 0.84;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+
+.logo-accent {
+  color: var(--first-color);
 }
 
 .heder-item,
 .adress-list {
   font-weight: 500;
   font-size: 14px;
-  line-height: 0.85;
+  line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--first-color);
 }
 
 .heder-item :hover,
@@ -48,20 +57,23 @@ body {
 /* MAIN*/
 
 .service {
-  position: absolute;
+  /*position: absolute;
   width: 1600px;
-  /*height: 600px;*/
+  height: 600px;*/
   left: 0px;
   /*top: 80px;*/
-  background: #2f303a;
+  background: var(--background-color);
 }
 .service-button {
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  /*top: 430px;*/
-
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.85;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--third-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -70,7 +82,7 @@ body {
 .service-text {
   font-weight: 900;
   font-size: 44px;
-  line-height: 0.73;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -81,7 +93,7 @@ body {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 0.53;
+  line-height: 1.88;
   display: flex;
   align-items: center;
   text-align: center;
@@ -95,7 +107,7 @@ body {
 .benefits-titel {
   font-weight: 700;
   font-size: 14px;
-  line-height: 0.87;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -103,7 +115,7 @@ body {
 .benefits-after-titel {
   font-weight: 400;
   font-size: 14px;
-  line-height: 0.58;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
@@ -114,7 +126,7 @@ body {
 .command-text {
   font-weight: 700;
   font-size: 36px;
-  line-height: 0.85;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -122,7 +134,7 @@ body {
 .command-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 0.84;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -130,7 +142,7 @@ body {
 .command-trade {
   font-weight: 400;
   font-size: 16px;
-  line-height: 0.84;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -140,21 +152,21 @@ body {
 /* FOOTER */
 
 .footer {
-  position: absolute;
-  width: 1600px;
   height: 252px;
-  left: 0px;
-  /*top: 2097px;*/
-  background: #2f303a;
+  background: var(--background-color);
 }
 
 .footer-logo {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
-  line-height: 0.84;
+  line-height: 1.93;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+}
+
+.footer-logo-accent {
+  color: var(--third-color);
 }
 
 .footer-place {
@@ -166,7 +178,7 @@ body {
 .footer-tel {
   font-weight: 400;
   font-size: 14px;
-  line-height: 0.58;
+  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
@@ -175,7 +187,7 @@ body {
 }
 .footer-mail,
 .footer-tel {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-mail-tel-color);
 }
 
 .footer-list :hover,
@@ -188,10 +200,10 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 0.62;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--first-color);
   cursor: pointer;
 }
 
@@ -204,13 +216,13 @@ body {
 .photo-tetl {
   font-weight: 700;
   font-size: 18px;
-  line-height: 0.5;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 .photo-afer-tetl {
   font-weight: 400;
   font-size: 16px;
-  line-height: 0.53;
+  line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
