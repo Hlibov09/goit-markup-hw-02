@@ -33,25 +33,27 @@ body {
   color: var(--first-color);
 }
 
+.heder-item a {
+  color: var(--first-color);
+}
+.heder-item a:hover,
+.heder-item a:focus {
+  color: var(--accent-color);
+}
+.adress-list a {
+  color: var(--second-color);
+}
+.adress-list a:hover,
+.adress-list a:focus {
+  color: var(--accent-color);
+}
+
 .heder-item,
 .adress-list {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--first-color);
-}
-
-.heder-item :hover,
-.heder-item :focus,
-.adress-list :hover,
-.adress-list :focus {
-  color: var(--accent-color);
-}
-
-.tel,
-.mail {
-  color: var(--second-color);
 }
 
 /* MAIN*/
@@ -194,6 +196,8 @@ body {
 .footer-list :focus {
   color: var(--accent-color);
 }
+
+/* portfolio*/
 
 .navigation-button {
   font-family: 'Roboto';
